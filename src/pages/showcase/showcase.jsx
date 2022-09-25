@@ -7,6 +7,7 @@ export default function Showcase() {
   return (
     <div className="showcase">
       <Description />
+      <hr />
       <Project />
       <CenterFooter />
     </div>
