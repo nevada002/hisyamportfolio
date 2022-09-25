@@ -1,42 +1,17 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Dribbble from "../card/card";
+import showcase from "../../data/showcase.json";
 
 export default function Project() {
   return (
     <>
       <Row style={{ marginTop: "100px" }}>
-        <Col xs={6}>
-          <Dribbble image={require("../../image/paint.png")} title="PaintApp" />
-        </Col>
-        <Col xs={6}>
-          <Dribbble
-            image={require("../../image/receipt.png")}
-            title="Receipt App"
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={6}>
-          <Dribbble
-            image={require("../../image/ududless.png")}
-            title="Ududless App"
-          />
-        </Col>
-        <Col xs={6}>
-          <Dribbble
-            image={require("../../image/travel.png")}
-            title="Travel App"
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={6}>
-          <Dribbble image={require("../../image/coin.png")} title="Coin App" />
-        </Col>
-        <Col xs={6}>
-          <Dribbble image={require("../../image/nft.png")} title="NFT App" />
-        </Col>
+        {showcase.map((item, id) => (
+          <Col key={id} md={6} sm={6} xs={12}>
+            <Dribbble image={item.image} title={item.title} />
+          </Col>
+        ))}
       </Row>
     </>
   );

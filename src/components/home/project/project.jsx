@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Content from "../card/card";
+import home from "../../data/home.json";
 
 export default function Project() {
   return (
@@ -13,68 +14,15 @@ export default function Project() {
         </Col>
       </Row>
       <Row>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/onlyurl.png")}
-            title="OnlyUrl"
-            description="This project is to redesign shorten link website OnlyURL for better User Experience and better Interface"
-          />
-        </Col>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/onlycalculator.png")}
-            title="OnlyCalculator"
-            description="This project is to redesign shorten link website BMI Calculator for better User Experience and Interface"
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/carmine.png")}
-            title="Carmine"
-            description="This project is to redesign Club House Chat App for better User Experience and better Interface"
-          />
-        </Col>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/zyon.png")}
-            title="Zyon Indonesia"
-            description="This project is to Mental Health Check Up App for Startup Zyon Indonesia"
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/carmine.png")}
-            title="HaiUBelajar"
-            description="StudyCase"
-          />
-        </Col>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/zyon.png")}
-            title="Waste4Change x Skilvul"
-            description="Study Case"
-          />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/zyon.png")}
-            title="HaiUBund"
-            description="Study Case"
-          />
-        </Col>
-        <Col xs={6}>
-          <Content
-            image={require("../../image/zyon.png")}
-            title="Redesign OnlyURL"
-            description="Study Case"
-          />
-        </Col>
+        {home.map((item, id) => (
+          <Col key={id} md={6} sm={6} xs={12}>
+            <Content
+              image={item.image}
+              description={item.description}
+              title={item.title}
+            />
+          </Col>
+        ))}
       </Row>
     </>
   );
