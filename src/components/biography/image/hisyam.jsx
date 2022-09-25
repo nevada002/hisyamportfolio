@@ -4,7 +4,7 @@ export default function Hisyam() {
   return (
     <>
       <img
-        className="Hisyam"
+        className="hisyam"
         src={require("../../image/hisyam.png")}
         alt="hisyam"
         border="0"
