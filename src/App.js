@@ -4,7 +4,6 @@ import Layout from "./components/layout/layout";
 import Biography from "./pages/biography/biography";
 import Showcase from "./pages/showcase/showcase";
 
-
 export default function App() {
   return (
     <Routes>
