@@ -24,3 +24,12 @@ nav {
   padding: 10px 15px;
   text-decoration: none;
 }
+
+.card-body {
+  transition: transform 0.2s;
+}
+.card-body:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
