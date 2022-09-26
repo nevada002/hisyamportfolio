@@ -40,7 +40,7 @@ export default function CenterFooter() {
             justifyContent: "center",
             textAlign: "center",
             marginTop: "50px",
-            marginBottom: "100px",
+            marginBottom: "10px",
           }}
         >
           <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
