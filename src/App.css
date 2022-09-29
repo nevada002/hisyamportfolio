@@ -1,4 +1,4 @@
-body{
+body {
   font-size: medium;
 }
 .header {
@@ -33,12 +33,12 @@ nav {
   text-decoration: none;
 }
 
-.card-subtitle{
-  font-size:28px;
+.card-subtitle {
+  font-size: 28px;
   font-weight: bold;
 }
 
-.card-img-top{
+.card-img-top {
   height: 430px;
   width: 720px;
 }
@@ -58,34 +58,37 @@ nav {
 }
 
 @media only screen and (max-width: 1440px) {
-body{
-font-size: medium;
+  body {
+    font-size: medium;
+  }
+  .card-img-top,
+  .card-body {
+    height: 333px;
+    width: 561px;
+  }
+  .home-card {
+    margin-bottom: 110px;
+  }
+  .showcase-card {
+    margin-bottom: 50px;
+  }
+  .card-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
-.card-img-top,
-.card-body {
-  height: 333px;
-  width: 561px;
-}
-.home-card{
-  margin-bottom: 110px;
-}
-.showcase-card{
-  margin-bottom: 50px;
-}
-.card-subtitle {
-  font-size: 20px;
-  font-weight: bold;
-}
-}
+
 @media only screen and (max-width: 1280px) {
-body{
-font-size: small;
+  body {
+    font-size: small;
+  }
+  .card-img-top,
+  .card-body {
+    height: 271px;
+    width: 410px;
+  }
 }
-.card-img-top,.card-body {
-  height: 271px;
-  width: 410px;
-}
-}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: small;
@@ -95,5 +98,44 @@ font-size: small;
   .card-body {
     height: 356.27px;
     width: 539px;
+  }
+  .hisyam {
+    display: none;
+  }
+  .leftfooter {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: small;
+  }
+
+  .card-img-top,
+  .card-body {
+    height: 356.27px;
+    width: 539px;
+  }
+
+  .hisyam,
+  .logo {
+    display: none;
+  }
+
+  .leftfooter {
+    display: grid;
+    justify-content: center;
+  }
+
+  .nav-links {
+    padding: 0;
+  }
+
+  .card-img-top,
+  .card-body {
+    height: 132.2px;
+    width: 200px;
   }
 }

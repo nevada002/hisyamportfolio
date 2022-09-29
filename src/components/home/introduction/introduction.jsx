@@ -4,14 +4,17 @@ import { Row, Col } from "react-bootstrap";
 export default function Introduction() {
   return (
     <Row style={{ marginBottom: "100px", marginTop: "100px" }}>
-      <Col xs={4}>
+      <Col lg={6} md={6} sm={12} xs={12}>
         <p>Hello, Welcome to my portfolio</p>
         <h3 className="mb-3">Hisyam Hawari</h3>
         <p>- UX Designer</p>
         <p>- UX Researcher</p>
       </Col>
       <Col
-        xs={8}
+        lg={6}
+        md={6}
+        sm={12}
+        xs={12}
         style={{
           display: "flex",
           alignItems: "center",

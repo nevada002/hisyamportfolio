@@ -4,6 +4,7 @@ import Leftfooter from "../layout/footer/leftfooter";
 import Hisyam from "./image/hisyam";
 
 export default function Main() {
+  // make function if under 768px <Hisyam/> will be hidden
   return (
     <div>
       <Row style={{ marginTop: "100px" }}>
@@ -41,7 +42,7 @@ export default function Main() {
             </p>
             <p>- Tomps Indonesia</p>
           </Col>
-          <Col xs={12} style={{ marginTop: "100px" }}>
+          <Col className="leftfooter" xs={12} style={{ marginTop: "100px" }}>
             <Leftfooter />
           </Col>
         </Col>

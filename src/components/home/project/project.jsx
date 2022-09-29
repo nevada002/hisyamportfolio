@@ -7,7 +7,7 @@ export default function Project() {
   return (
     <>
       <Row>
-        <Col xs={4}>
+        <Col lg={6} md={6} sm={12} xs={12}>
           <p style={{ marginTop: "30px", marginBottom: "30px" }}>
             - Featured Project
           </p>
@@ -26,7 +26,7 @@ export default function Project() {
         ))}
       </Row>
       <Row>
-        <Col xs={4}>
+        <Col lg={6} md={6} sm={12} xs={12}>
           <p style={{ marginTop: "30px", marginBottom: "30px" }}>
             - Study Case
           </p>
