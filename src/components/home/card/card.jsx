@@ -9,7 +9,7 @@ export default function Content(props) {
           <Card.Img
             variant="top"
             src={props.image}
-            style={{ marginBottom: "10px" }}
+            style={{ marginBottom: "10px", height: "350.78px" }}
           />
         </Card.Link>
         <Card.Subtitle className="mb-2 text-muted">{props.title}</Card.Subtitle>
