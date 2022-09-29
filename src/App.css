@@ -58,9 +58,6 @@ nav {
 }
 
 @media only screen and (max-width: 1440px) {
-  body {
-    font-size: medium;
-  }
   .card-img-top,
   .card-body {
     height: 333px;
@@ -90,10 +87,6 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    font-size: small;
-  }
-
   .card-img-top,
   .card-body {
     height: 356.27px;
@@ -109,10 +102,6 @@ nav {
 }
 
 @media only screen and (max-width: 425px) {
-  body {
-    font-size: small;
-  }
-
   .card-img-top,
   .card-body {
     height: 356.27px;
