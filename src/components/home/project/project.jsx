@@ -15,7 +15,7 @@ export default function Project() {
       </Row>
       <Row>
         {home.slice(0, 4).map((item, id) => (
-          <Col key={id} md={6} sm={6} xs={12}>
+          <Col key={id} lg={6} md={12} sm={12} xs={12}>
             <Content
               link={item.link}
               image={item.image}
@@ -34,7 +34,7 @@ export default function Project() {
       </Row>
       <Row>
         {home.slice(4, 8).map((item, id) => (
-          <Col key={id} md={6} sm={6} xs={12}>
+          <Col key={id} lg={6} md={12} sm={12} xs={12}>
             <Content
               link={item.link}
               image={item.image}

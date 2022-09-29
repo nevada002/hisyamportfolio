@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <div>
       <Row style={{ marginTop: "100px" }}>
-        <Col xs={8}>
+        <Col lg={8}>
           <Col xs={12}>
             <h1>- About Me</h1>
           </Col>
@@ -45,7 +45,7 @@ export default function Main() {
             <Leftfooter />
           </Col>
         </Col>
-        <Col xs={4}>
+        <Col lg={4}>
           <Hisyam />
         </Col>
       </Row>

@@ -1,5 +1,8 @@
+body{
+  font-size: medium;
+}
 .header {
-  background-color: ##fbfbfb;
+  background-color: #fff;
   margin-bottom: 20px;
   padding: 20px 0;
   text-align: center;
@@ -30,6 +33,16 @@ nav {
   text-decoration: none;
 }
 
+.card-subtitle{
+  font-size:28px;
+  font-weight: bold;
+}
+
+.card-img-top{
+  height: 430px;
+  width: 720px;
+}
+
 .card-body,
 .nav-item,
 .hisyam {
@@ -42,4 +55,45 @@ nav {
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1440px) {
+body{
+font-size: medium;
+}
+.card-img-top,
+.card-body {
+  height: 333px;
+  width: 561px;
+}
+.home-card{
+  margin-bottom: 110px;
+}
+.showcase-card{
+  margin-bottom: 50px;
+}
+.card-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+}
+@media only screen and (max-width: 1280px) {
+body{
+font-size: small;
+}
+.card-img-top,.card-body {
+  height: 271px;
+  width: 410px;
+}
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: small;
+  }
+
+  .card-img-top,
+  .card-body {
+    height: 356.27px;
+    width: 539px;
+  }
 }
