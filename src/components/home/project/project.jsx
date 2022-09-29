@@ -14,7 +14,26 @@ export default function Project() {
         </Col>
       </Row>
       <Row>
-        {home.map((item, id) => (
+        {home.slice(0, 4).map((item, id) => (
+          <Col key={id} md={6} sm={6} xs={12}>
+            <Content
+              link={item.link}
+              image={item.image}
+              description={item.description}
+              title={item.title}
+            />
+          </Col>
+        ))}
+      </Row>
+      <Row>
+        <Col xs={4}>
+          <p style={{ marginTop: "30px", marginBottom: "30px" }}>
+            - Study Case
+          </p>
+        </Col>
+      </Row>
+      <Row>
+        {home.slice(4, 8).map((item, id) => (
           <Col key={id} md={6} sm={6} xs={12}>
             <Content
               link={item.link}
