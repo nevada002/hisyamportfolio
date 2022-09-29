@@ -17,6 +17,7 @@ export default function Project() {
         {home.map((item, id) => (
           <Col key={id} md={6} sm={6} xs={12}>
             <Content
+              link={item.link}
               image={item.image}
               description={item.description}
               title={item.title}
